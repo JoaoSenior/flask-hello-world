@@ -4,9 +4,8 @@ import bcrypt
 import traceback
 import jwt
 from datetime import datetime
-from flask import request, jsonify
 
-app = Flask(_name_)
+app = Flask(__name__)
 SECRET_KEY = 'M@Ch@v@SecreT!2024#123'
 
 # Dados de conexão à base de dados
