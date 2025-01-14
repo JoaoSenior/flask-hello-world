@@ -14,6 +14,11 @@ DB_NAME = "postgres"
 DB_USER = "postgres"
 DB_PASSWORD = "1234"
 
+
+@app.route("/")
+def home():
+    return "Bem-vindo à aplicação Flask!"
+
 # Função para criar a conexão com o PostgreSQL
 def conectar_bd():
     try:
